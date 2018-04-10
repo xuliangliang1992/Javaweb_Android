@@ -16,8 +16,9 @@ public class QueryTeachersServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/plain");
-        resp.setCharacterEncoding("gb2312");
+        resp.setContentType("text/plain; charset=UTF-8");
+        resp.setCharacterEncoding("UTF-8");
+        req.setCharacterEncoding("UTF-8");
         // 将数据添加到数组
         SchoolDao dao = new SchoolDao();
         List<Teacher> teacherList = new ArrayList<>();

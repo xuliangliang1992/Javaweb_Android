@@ -3,9 +3,14 @@ package com.xll;
 import java.util.List;
 
 public class TeacherTotal {
-    private int total; //教师数量
-    private List<Teacher> teachers; //教师列表
-
+    /**
+     * 教师数量
+     */
+    private int total;
+    /**
+     * 教师列表
+     */
+    private List<Teacher> teachers;
 
     public TeacherTotal() {
     }
